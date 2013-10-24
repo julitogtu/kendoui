@@ -1,0 +1,24 @@
+﻿@using Kendo.Mvc.UI;
+
+@{
+    ViewBag.Title = "Autocomplete";
+}
+
+<div class="jumbotron">
+    <h1>Kendo UI - Autocomplete</h1>
+    
+    @(Html.Kendo().AutoComplete()
+        .Name("country")
+        .Placeholder("Choose a country...")
+        .DataTextField("Name")
+        .Filter("contains")
+        .DataSource(source =>
+        {
+            source.Read(read =>
+            {
+                read.Action("GetCountries", "Home");
+            });
+        })
+    )
+</div>
+
