@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.21126.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoUIAutocompleteMVC", "KendoUIAutocompleteMVC\KendoUIAutocompleteMVC.csproj", "{21784951-E3E0-4D09-8E15-710AB14080D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendoUIChartMvcWrapper", "KendoUIChartMvcWrapper\KendoUIChartMvcWrapper.csproj", "{6D256BB5-9424-4A38-9007-7C46E4C92A0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{21784951-E3E0-4D09-8E15-710AB14080D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21784951-E3E0-4D09-8E15-710AB14080D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21784951-E3E0-4D09-8E15-710AB14080D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D256BB5-9424-4A38-9007-7C46E4C92A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D256BB5-9424-4A38-9007-7C46E4C92A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D256BB5-9424-4A38-9007-7C46E4C92A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D256BB5-9424-4A38-9007-7C46E4C92A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,41 @@
+﻿@using Kendo.Mvc.UI;
+@model IEnumerable<KendoUIChartMvcWrapper.Models.Values>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@(Html.Kendo().Chart(Model)
+    .Name("chart")
+    .Title("Kendo UI Chart")
+    .Legend(legend => legend
+        .Position(ChartLegendPosition.Bottom)
+    )
+    .ChartArea(chartArea => chartArea
+        .Background("transparent")
+    )
+    .SeriesDefaults(seriesDefaults =>
+        seriesDefaults.Line()
+    )
+    .Series(series =>
+    {
+        series.Line(model => model.Value)
+            .Name("Cantidad")
+            .Labels(true)
+            .Opacity(0.8);
+    })
+    .CategoryAxis(axis => axis
+        .Categories(model => model.Date)
+        .MajorGridLines(lines => lines.Visible(false))
+        .Labels(labels => labels.Rotation(-90))
+        .Date()
+        .BaseUnitStep(10)
+        .MinorGridLines(lines => lines.Visible(true))
+    )
+    .Tooltip(tooltip => tooltip
+        .Visible(true)
+        .Format("{0}")
+    )
+)
+
